@@ -36,5 +36,5 @@
 	"env_set": {
 		"FIREBIRD": "$dir"
 	},
-	"persist": ["data", "security2.fdb"]
+	"persist": ["data", "udf", "security2.fdb"]
 }
