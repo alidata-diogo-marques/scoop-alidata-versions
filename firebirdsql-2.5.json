@@ -1,0 +1,40 @@
+{
+	"version": "2.5.9",
+	"homepage": "https://firebirdsql.org",
+	"notes": [
+		"Run 'fbserver.exe -a' to start the database or",
+		"register it as a service by running 'instsvc install -z' from an elevated shell.",
+		"Default superuser login: SYSDBA, password: masterkey"
+	],
+	"architecture": {
+		"64bit": {
+			"url": "https://github.com/FirebirdSQL/firebird/releases/download/R2_5_9/Firebird-2.5.9.27139-0_x64.zip",
+			"hash": "707E05BAE8994B06CEC60815A292078DB82D8E75616F4DD514B7E417A3EE2137"
+		}
+	},
+	"bin": [
+		"bin\\fbtracemgr.exe",
+		"bin\\gstat.exe",
+		"bin\\fbsvcmgr.exe",
+		"bin\\qli.exe",
+		"bin\\instclient.exe",
+		"bin\\nbackup.exe",
+		"bin\\isql.exe",
+		"bin\\fb_inet_server.exe",
+		"bin\\fb_lock_print.exe",
+		"bin\\fbguard.exe",
+		"bin\\fbserver.exe",
+		"bin\\gbak.exe",
+		"bin\\gdef.exe",
+		"bin\\gpre.exe",
+		"bin\\gfix.exe",
+		"bin\\gsec.exe",
+		"bin\\gsplit.exe",
+		"bin\\instreg.exe",
+		"bin\\instsvc.exe"
+	],
+	"env_set": {
+		"FIREBIRD": "$dir"
+	},
+	"persist": ["data", "security2.fdb"]
+}
